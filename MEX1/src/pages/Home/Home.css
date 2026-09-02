@@ -1,0 +1,38 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1.5rem;
+}
+
+.home-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.home-hero__actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.home-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.home-stats__value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+.home-cta {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #f9fafb;
+  border-radius: 12px;
+}
