@@ -6,6 +6,19 @@ A small, realistic Learning Management System (LMS) front-end built as a React C
 
 Mini LMS Dashboard lets a visitor browse a course catalog, view course details, and favorite courses they're interested in. After logging in with a demo account, they get access to a personal dashboard showing enrollment statistics and per-course progress. The project is intentionally scoped to be realistic without being over-engineered — it's built to demonstrate a clear, correct application of core React concepts rather than to be a production LMS.
 
+## Demo
+
+
+### Demo Image
+
+![Home page](./src/assets/HomePage.png)
+
+![Course catalog](./src/assets/CoursePage.png)
+
+![Favorite Page](./src/assets/FavoritePage.png)
+
+![DashBoard ](./src/assets/DashBoard.png)
+
 ## Features
 
 - Public course catalog with search, category filter, and level filter
@@ -112,14 +125,4 @@ Email: student@example.com
 Password: 123456
 ```
 
-## Screenshots
 
-_Add screenshots of the Home page, Courses catalog, Course Detail, Login, and Dashboard here before publishing._
-
-## Future Improvements
-
-- Real backend integration (replace mock data with API calls + `createAsyncThunk`)
-- A dedicated `/favorites` page listing all favorited courses
-- Course reviews/comments
-- Search debouncing for larger course catalogs
-- Dark mode via a UI-settings Context
