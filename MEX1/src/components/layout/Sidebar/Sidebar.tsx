@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import "./Sidebar.css";
 
 export default function Sidebar() {
   return (
@@ -16,6 +15,12 @@ export default function Sidebar() {
         className={({ isActive }) => (isActive ? "sidebar__link active" : "sidebar__link")}
       >
         My Courses
+      </NavLink>
+      <NavLink
+        to="/dashboard/favorites"
+        className={({ isActive }) => (isActive ? "sidebar__link active" : "sidebar__link")}
+      >
+        Favorite Courses
       </NavLink>
     </aside>
   );

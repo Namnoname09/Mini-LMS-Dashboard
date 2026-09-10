@@ -16,12 +16,139 @@ h1, h2, h3 {
 .public-layout__content,
 .dashboard-page,
 .my-courses-page,
+.favorite-page,
 .courses-page,
 .course-detail,
 .login-page {
   padding: 1.5rem;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.dashboard-page__header,
+.favorite-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.section-badge--gold {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.favorite-page__summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+  color: #312e81;
+  border: 1px solid #ddd6fe;
+}
+
+.favorite-page__summary strong {
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.favorite-page__summary span {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.favorite-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.favorite-course-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.04);
+}
+
+.favorite-course-card__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.favorite-course-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.favorite-course-card__topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.favorite-course-card__category,
+.favorite-course-card__level {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.favorite-course-card__category {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.favorite-course-card__level {
+  background: #ecfeff;
+  color: #0f766e;
+}
+
+.favorite-course-card__meta,
+.favorite-course-card__description {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.favorite-course-card__description {
+  line-height: 1.5;
+}
+
+.favorite-course-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: auto;
 }
 
 .footer {

@@ -9,6 +9,7 @@ import CourseDetail from "../pages/CourseDetail/CourseDetail";
 import Login from "../pages/Login/Login";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import MyCourses from "../pages/MyCourses/MyCourses";
+import Favorites from "../pages/Favorites/Favorites";
 
 export default function AppRoutes() {
   return (
@@ -17,6 +18,7 @@ export default function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:id" element={<CourseDetail />} />
+        <Route path="/favorites" element={<Favorites />} />
         <Route path="/login" element={<Login />} />
       </Route>
 
@@ -24,6 +26,7 @@ export default function AppRoutes() {
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/dashboard/courses" element={<MyCourses />} />
+          <Route path="/dashboard/favorites" element={<Favorites />} />
         </Route>
       </Route>
     </Routes>
